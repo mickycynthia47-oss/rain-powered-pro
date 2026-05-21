@@ -33,7 +33,11 @@ import {
   Trash2,
   Send,
   Loader2,
+  LogOut,
 } from "lucide-react";
+import { useNavigate } from "@tanstack/react-router";
+import { useAuth } from "@/hooks/use-auth";
+import { supabase } from "@/integrations/supabase/client";
 import { Splash } from "@/components/splash";
 import {
   loadAnalytics,
@@ -64,16 +68,24 @@ export const Route = createFileRoute("/")({ component: Page });
 
 function Page() {
   const [showSplash, setShowSplash] = useState<boolean | null>(null);
+  const { user, loading } = useAuth();
+  const navigate = useNavigate();
 
   useEffect(() => {
     setShowSplash(typeof window !== "undefined" && !localStorage.getItem("splashSeen"));
   }, []);
 
-  if (showSplash === null) return null;
+  useEffect(() => {
+    if (!loading && !user) navigate({ to: "/auth" });
+  }, [loading, user, navigate]);
+
+  if (showSplash === null || loading) return null;
+  if (!user) return null;
+
   return (
     <>
       {showSplash && <Splash onDone={() => setShowSplash(false)} />}
-      <App />
+      <App user={user} />
     </>
   );
 }
@@ -91,9 +103,19 @@ const TABS: { id: Tab; label: string; icon: React.ReactNode }[] = [
   { id: "chat", label: "💬 Chat", icon: <MessageSquare className="h-4 w-4" /> },
 ];
 
-function App() {
+function App({ user }: { user: { email?: string | null; user_metadata?: { full_name?: string; avatar_url?: string } } }) {
   const [tab, setTab] = useState<Tab>("dashboard");
   const [dark, setDark] = useState(false);
+  const navigate = useNavigate();
+
+  const handleSignOut = async () => {
+    await supabase.auth.signOut();
+    toast.success("Signed out");
+    navigate({ to: "/auth" });
+  };
+
+  const displayName = user.user_metadata?.full_name || user.email?.split("@")[0] || "User";
+  const avatar = user.user_metadata?.avatar_url;
 
   useEffect(() => {
     const stored = localStorage.getItem("bh-theme");
@@ -125,13 +147,33 @@ function App() {
               <p className="text-xs text-white/80">Blue Horizon Edition</p>
             </div>
           </div>
-          <button
-            onClick={() => setDark((d) => !d)}
-            className="rounded-full bg-white/20 p-2 transition hover:bg-white/30"
-            aria-label="Toggle theme"
-          >
-            {dark ? <Sun className="h-5 w-5" /> : <Moon className="h-5 w-5" />}
-          </button>
+          <div className="flex items-center gap-2">
+            <div className="hidden items-center gap-2 rounded-full bg-white/15 px-3 py-1.5 text-xs sm:flex">
+              {avatar ? (
+                <img src={avatar} alt="" className="h-6 w-6 rounded-full" />
+              ) : (
+                <div className="flex h-6 w-6 items-center justify-center rounded-full bg-white/30 text-[10px] font-bold">
+                  {displayName.slice(0, 1).toUpperCase()}
+                </div>
+              )}
+              <span className="font-medium">{displayName}</span>
+            </div>
+            <button
+              onClick={() => setDark((d) => !d)}
+              className="rounded-full bg-white/20 p-2 transition hover:bg-white/30"
+              aria-label="Toggle theme"
+            >
+              {dark ? <Sun className="h-5 w-5" /> : <Moon className="h-5 w-5" />}
+            </button>
+            <button
+              onClick={handleSignOut}
+              className="flex items-center gap-1.5 rounded-full bg-white/20 px-3 py-2 text-xs font-medium transition hover:bg-white/30"
+              aria-label="Sign out"
+            >
+              <LogOut className="h-4 w-4" />
+              <span className="hidden sm:inline">Sign out</span>
+            </button>
+          </div>
         </div>
 
         {/* Tabs */}
