@@ -33,7 +33,11 @@ import {
   Trash2,
   Send,
   Loader2,
+  LogOut,
 } from "lucide-react";
+import { useNavigate } from "@tanstack/react-router";
+import { useAuth } from "@/hooks/use-auth";
+import { supabase } from "@/integrations/supabase/client";
 import { Splash } from "@/components/splash";
 import {
   loadAnalytics,
@@ -64,16 +68,24 @@ export const Route = createFileRoute("/")({ component: Page });
 
 function Page() {
   const [showSplash, setShowSplash] = useState<boolean | null>(null);
+  const { user, loading } = useAuth();
+  const navigate = useNavigate();
 
   useEffect(() => {
     setShowSplash(typeof window !== "undefined" && !localStorage.getItem("splashSeen"));
   }, []);
 
-  if (showSplash === null) return null;
+  useEffect(() => {
+    if (!loading && !user) navigate({ to: "/auth" });
+  }, [loading, user, navigate]);
+
+  if (showSplash === null || loading) return null;
+  if (!user) return null;
+
   return (
     <>
       {showSplash && <Splash onDone={() => setShowSplash(false)} />}
-      <App />
+      <App user={user} />
     </>
   );
 }
