@@ -13,6 +13,13 @@ export function Splash({ onDone }: { onDone: () => void }) {
     }, 500);
   };
 
+  const handleExit = () => {
+    setFading(true);
+    setTimeout(() => {
+      window.location.href = "/auth";
+    }, 400);
+  };
+
   return (
     <div
       className={`fixed inset-0 z-50 overflow-hidden transition-opacity duration-500 ${
