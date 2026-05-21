@@ -157,7 +157,7 @@ function App() {
 
       {/* Main */}
       <main className="mx-auto max-w-7xl px-4 py-6 sm:px-8">
-        {tab === "dashboard" && <Dashboard dark={dark} cardBg={cardBg} text={text} />}
+        {tab === "dashboard" && <Dashboard dark={dark} cardBg={cardBg} />}
         {tab === "email" && <EmailSection dark={dark} cardBg={cardBg} />}
         {tab === "meetings" && <MeetingSection dark={dark} cardBg={cardBg} />}
         {tab === "tasks" && <TaskSection dark={dark} cardBg={cardBg} />}
@@ -241,7 +241,7 @@ function useAnalytics() {
   return state;
 }
 
-function Dashboard({ dark, cardBg, text }: { dark: boolean; cardBg: string; text: string }) {
+function Dashboard({ dark, cardBg }: { dark: boolean; cardBg: string }) {
   const state = useAnalytics();
   const counts = countsByTool(state);
   const score = productivityScore(state);
