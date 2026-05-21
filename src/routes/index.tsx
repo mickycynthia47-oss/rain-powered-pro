@@ -434,7 +434,7 @@ async function runTool<T>(
 
 /* ============================ EMAIL ============================ */
 
-function EmailSection({ dark, cardBg }: { dark: boolean; cardBg: string }) {
+function EmailSection({ cardBg }: { dark: boolean; cardBg: string }) {
   const [recipient, setRecipient] = useState("👔 Manager");
   const [tone, setTone] = useState("Formal");
   const [context, setContext] = useState("");
