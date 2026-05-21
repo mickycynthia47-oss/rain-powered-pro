@@ -13,6 +13,13 @@ export function Splash({ onDone }: { onDone: () => void }) {
     }, 500);
   };
 
+  const handleExit = () => {
+    setFading(true);
+    setTimeout(() => {
+      window.location.href = "/auth";
+    }, 400);
+  };
+
   return (
     <div
       className={`fixed inset-0 z-50 overflow-hidden transition-opacity duration-500 ${
@@ -74,16 +81,24 @@ export function Splash({ onDone }: { onDone: () => void }) {
             ))}
           </div>
 
-          <button
-            onClick={handleOk}
-            className="splash-pulse mt-8 cursor-pointer rounded-full px-8 py-4 font-bold text-white transition-transform hover:scale-105 active:scale-95"
-            style={{
-              background: "linear-gradient(135deg, #00ACC1, #00838F)",
-              boxShadow: "0 0 0 0 rgba(0,172,193,0.7)",
-            }}
-          >
-            🌊 CLICK OK TO PROCEED →
-          </button>
+          <div className="mt-8 flex flex-wrap items-center justify-center gap-3">
+            <button
+              onClick={handleOk}
+              className="splash-pulse cursor-pointer rounded-full px-8 py-4 font-bold text-white transition-transform hover:scale-105 active:scale-95"
+              style={{
+                background: "linear-gradient(135deg, #00ACC1, #00838F)",
+                boxShadow: "0 0 0 0 rgba(0,172,193,0.7)",
+              }}
+            >
+              🌊 CLICK OK TO PROCEED →
+            </button>
+            <button
+              onClick={handleExit}
+              className="cursor-pointer rounded-full border-2 border-white/50 px-6 py-3 font-semibold text-white/90 transition hover:bg-white/10"
+            >
+              ✕ EXIT
+            </button>
+          </div>
         </div>
       </div>
 
