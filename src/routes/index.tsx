@@ -37,7 +37,7 @@ import {
 import { Splash } from "@/components/splash";
 import {
   loadAnalytics,
-  saveAnalytics,
+  
   trackEvent,
   resetAnalytics,
   countsByTool,
