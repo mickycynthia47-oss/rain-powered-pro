@@ -70,6 +70,7 @@ const NAV: { id: Tab; label: string; icon: ReactNode }[] = [
   { id: "voice", label: "🎙️ Voice Commands", icon: <Mic className="h-5 w-5" /> },
   { id: "achievements", label: "🏆 Achievements", icon: <Trophy className="h-5 w-5" /> },
   { id: "settings", label: "⚙️ Settings", icon: <SettingsIcon className="h-5 w-5" /> },
+  { id: "ai-safety", label: "🛡️ AI Safety", icon: <Shield className="h-5 w-5" /> },
 ];
 
 type SettingsState = {
