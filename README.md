@@ -22,71 +22,28 @@
 <div align="center">
 
 ### 🌧️ Splash Screen
-*(<img width="1678" height="913" alt="1" src="https://github.com/user-attachments/assets/012281db-2f90-4048-bfbe-207dc48ef662" />
-)*
+*(<img width="1678" height="913" alt="1" src="https://github.com/user-attachments/assets/012281db-2f90-4048-bfbe-207dc48ef662" />)*
 
 ---
 
 ### 📊 Analytics Dashboard
-*(<img width="1671" height="911" alt="2" src="https://github.com/user-attachments/assets/58afac93-0082-45cf-863a-c6421851e8e8" />
-)*
+*(<img width="1671" height="911" alt="2" src="https://github.com/user-attachments/assets/58afac93-0082-45cf-863a-c6421851e8e8" />)*
 
 ---
 
 ### 📧 Smart Email Generator
-*(Add your Email Generator image here)*
+*(<img width="1680" height="899" alt="3" src="https://github.com/user-attachments/assets/20fa592c-1e1d-4b91-b885-79a8f4ec4735" />)*
 
 ---
 
 ### 📝 Meeting Summarizer
-*(Add your Meeting Summarizer image here)*
+*(<img width="1680" height="914" alt="4" src="https://github.com/user-attachments/assets/a2c4727c-e406-446c-8905-d7e8a4c7d545" />)*
 
 ---
 
 ### ✅ AI Task Planner
-*(Add your Task Planner image here)*
-
----
-
-### 🔬 Research Assistant
-*(Add your Research Assistant image here)*
-
----
-
-### 💬 AI Chatbot
-*(Add your Chatbot image here)*
-
----
-
-### 🎙️ Voice Commands
-*(Add your Voice Commands image here)*
-
----
-
-### 🏆 Achievements & Badges
-*(Add your Achievements image here)*
-
----
-
-### ⭐ User Reviews Page
-*(Add your Reviews page image here)*
-
----
-
-### 📤 Share Page
-*(Add your Share page image here)*
-
----
-
-### 🛡️ AI Safety Center
-*(Add your Safety Center image here)*
-
----
-
-### ⚙️ Settings
-*(Add your Settings image here)*
-
-</div>
+*(<img width="1680" height="909" alt="5" src="https://github.com/user-attachments/assets/18fb5d0d-d314-4f2b-969a-ffb56f046937" />
+)*
 
 ---
 
@@ -106,32 +63,6 @@ Once you click OK, the splash screen saves to `localStorage` and never appears a
 
 ## 🧭 Left Sidebar Navigation
 
-```
-┌─────────────────────────────────────────────────────────────┐
-│ ┌──────────┐                                               │
-│ │ 🌧️ AI    │                                               │
-│ │ Assistant│                                               │
-│ ├──────────┤                                               │
-│ │ 👤 Eddy  │                                               │
-│ ├──────────┤                                               │
-│ │ 🏠 Dash  │  ┌─────────────────────────────────────────┐ │
-│ │ 📧 Email │  │                                         │ │
-│ │ 📝 Meet  │  │    📊 ANALYTICS DASHBOARD              │ │
-│ │ ✅ Tasks │  │    📧 Email Generator                   │ │
-│ │ 🔬 Res   │  │    📝 Meeting Summarizer                │ │
-│ │ 💬 Chat  │  │    ✅ Task Planner                      │ │
-│ │ 🎙️ Voice │  │    🔬 Research Assistant                │ │
-│ │ 🏆 Badges│  │    💬 AI Chatbot                        │ │
-│ │ ⭐ Reviews│ │    🎙️ Voice Commands                    │ │
-│ │ 📤 Share │  │    🏆 Achievements                      │ │
-│ │ 🛡️ Safety│  │    ⭐ User Reviews                      │ │
-│ │ ⚙️ Settings│ │    📤 Share Assistant                  │ │
-│ ├──────────┤  │    🛡️ AI Safety Center                  │ │
-│ │ 🌙 Dark  │  │    ⚙️ Settings                          │ │
-│ │ 🔊 Sound │  │                                         │ │
-│ └──────────┘  └─────────────────────────────────────────┘ │
-└─────────────────────────────────────────────────────────────┘
-```
 
 ---
 
@@ -182,12 +113,12 @@ Users can leave feedback about the AI assistant:
 
 ### Sample Review Card
 ```
-┌─────────────────────────────────────────────────────────┐
-│ ⭐⭐⭐⭐⭐ 5.0                                               │
-│ "This AI saved my workweek!"                            │
-│ — Mongiwethu E. · 2 days ago                            │
-│ Category: Overall · Helpful: 24 people                  │
-└─────────────────────────────────────────────────────────┘
+─────────────────────────────────────────────────────────
+ ⭐⭐⭐⭐⭐ 5.0                                               
+ "This AI saved my workweek!"                            
+ — Mongiwethu E. · 2 days ago                            
+ Category: Overall · Helpful: 24 people                  
+─────────────────────────────────────────────────────────
 ```
 
 ### Admin Features (LocalStorage-based)
@@ -217,14 +148,14 @@ Users can share their productivity achievements:
 ```
 ┌─────────────────────────────────────────────────────────┐
 │ 🌧️ Blue Horizon AI Assistant                           │
-│ ─────────────────────────────────────────────────────── │
-│ 📧 47 emails  📝 23 meetings  ✅ 56 tasks               │
-│ 🔬 34 research  💬 128 chats  ⭐ 84/100 score          │
-│ 🔥 7 day streak  🏆 5 badges earned                     │
-│ ─────────────────────────────────────────────────────── │
-│ Check out my productivity report:                       │
-│ https://rain-powered-pro.lovable.app/share/eddy        │
-└─────────────────────────────────────────────────────────┘
+│ ─────────────────────────────────────────────────────── 
+│ 📧 47 emails  📝 23 meetings  ✅ 56 tasks               
+│ 🔬 34 research  💬 128 chats  ⭐ 84/100 score          
+│ 🔥 7 day streak  🏆 5 badges earned                     
+│ ─────────────────────────────────────────────────────── 
+│ Check out my productivity report:                       
+│ https://rain-powered-pro.lovable.app/share/eddy        
+└─────────────────────────────────────────────────────────
 ```
 
 ---
@@ -246,17 +177,17 @@ Dedicated page for responsible AI practices:
 
 ### Safety Dashboard
 ```
-┌─────────────────────────────────────────────────────────┐
-│ 🛡️ AI SAFETY CENTER                                    │
-├─────────────────────────────────────────────────────────┤
-│ ✅ Bias Score: 98% (minimal bias detected)              │
-│ ✅ Data Privacy: No external storage                    │
-│ ✅ User Control: 100% of outputs editable               │
-│ ⚠️ Limitations: 4 documented gaps                       │
-│ 📊 Feedback Accuracy: 87% positive 👍                   │
-├─────────────────────────────────────────────────────────┤
-│ [📥 Download Safety Report] [🔄 Run Safety Audit]      │
-└─────────────────────────────────────────────────────────┘
+┌─────────────────────────────────────────────────────────
+ 🛡️ AI SAFETY CENTER                                   
+─────────────────────────────────────────────────────────
+ ✅ Bias Score: 98% (minimal bias detected)              
+ ✅ Data Privacy: No external storage                    
+ ✅ User Control: 100% of outputs editable               
+ ⚠️ Limitations: 4 documented gaps                       
+ 📊 Feedback Accuracy: 87% positive 👍                   
+─────────────────────────────────────────────────────────
+ [📥 Download Safety Report] [🔄 Run Safety Audit]      
+─────────────────────────────────────────────────────────
 ```
 
 ### Safety Report (CSV Export)
@@ -272,18 +203,18 @@ Dedicated page for responsible AI practices:
 ### Real-Time Metrics Tracked
 
 ```
-┌─────────────────────────────────────────────────────────┐
-│  📊 LIVE ANALYTICS DASHBOARD                            │
-├─────────────────────────────────────────────────────────┤
-│  📧 47 emails    📝 23 meetings    ✅ 56 tasks          │
-│  🔬 34 research  💬 128 chats      ⭐ 84/100 score      │
-│  ⚡ 1.2s avg     📅 23m session    🔥 7 day streak      │
-├─────────────────────────────────────────────────────────┤
-│  [Donut Chart: Usage]  [Gauge: Productivity]           │
-│  [Bar Chart: Weekly]   [Line: Response Time]           │
-├─────────────────────────────────────────────────────────┤
-│  [📥 Export CSV]  [🔄 Reset Analytics]                  │
-└─────────────────────────────────────────────────────────┘
+┌─────────────────────────────────────────────────────────
+│  📊 LIVE ANALYTICS DASHBOARD                            
+├─────────────────────────────────────────────────────────
+│  📧 47 emails    📝 23 meetings    ✅ 56 tasks          
+│  🔬 34 research  💬 128 chats      ⭐ 84/100 score      
+│  ⚡ 1.2s avg     📅 23m session    🔥 7 day streak      
+├─────────────────────────────────────────────────────────
+│  [Donut Chart: Usage]  [Gauge: Productivity]           
+│  [Bar Chart: Weekly]   [Line: Response Time]           
+├─────────────────────────────────────────────────────────
+│  [📥 Export CSV]  [🔄 Reset Analytics]                  
+└─────────────────────────────────────────────────────────
 ```
 
 ### Productivity Score Algorithm
@@ -449,16 +380,3 @@ Made with 💙 by **Mongiwethu Eddy Ncube**
 
 ---
 
-## ✅ Summary
-
-| Section | Status |
-|---------|--------|
-| Screenshots | ✅ Vertical layout (no grid) — placeholders ready for YOUR images |
-| Your Name | ✅ Mongiwethu Eddy Ncube |
-| Live Demo Link | ✅ Working |
-| Reviews Page | ✅ Documented |
-| Share Page | ✅ Documented |
-| AI Safety Center | ✅ Documented |
-| All Features | ✅ Documented |
-
-Just copy this README, add your images where it says `*(Add your... image here)*`, and you're ready to submit! 🚀🌧️💙
