@@ -20,6 +20,22 @@
 
 <div align="center">
 
+ ### 🌧️ Splash Screen
+
+<img width="1678" height="913" alt="1" src="<img width="601" height="705" alt="sign up" src="<img width="800" height="573" alt="splash" src="https://github.com/user-attachments/assets/d542ed8e-b757-4f9c-b072-4cde962fb4fa" />
+
+---
+
+### 🌧️ Sign up
+
+<img width="1678" height="913" alt="1" src="<img width="601" height="705" alt="sign up" src="https://github.com/user-attachments/assets/272ff13c-40a3-4724-bab6-38638f16446d" />
+
+---
+### 🌧️ Log in
+
+<img width="1678" height="913" alt="1" src="<<img width="556" height="679" alt="login" src="https://github.com/user-attachments/assets/4a8b9ac2-ae55-4db2-a44d-cb843cda4120" />
+
+---
 ### 🌧️ Analytics Dashboard
 
 <img width="1678" height="913" alt="1" src="https://github.com/user-attachments/assets/012281db-2f90-4048-bfbe-207dc48ef662" />
