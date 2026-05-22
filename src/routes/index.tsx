@@ -10,7 +10,7 @@ import {
   Sun, Moon, Mail, ClipboardList, CheckSquare, Microscope, MessageSquare,
   LayoutDashboard, Copy, Download, RotateCcw, Plus, Trash2, Send, Loader2,
   LogOut, Mic, MicOff, Trophy, Settings as SettingsIcon, Volume2, VolumeX,
-  ThumbsUp, ThumbsDown, Upload, Bell, Shield,
+  ThumbsUp, ThumbsDown, Upload, Bell, Shield, Star, Share2, Link as LinkIcon,
 } from "lucide-react";
 import { useAuth } from "@/hooks/use-auth";
 import { supabase } from "@/integrations/supabase/client";
