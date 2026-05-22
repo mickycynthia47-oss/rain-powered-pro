@@ -38,7 +38,7 @@
 
 ---
 
-### 📝 Meeting Summarizer
+### 📝 AI Safety
 
 <img width="1680" height="914" alt="4" src="https://github.com/user-attachments/assets/a2c4727c-e406-446c-8905-d7e8a4c7d545" />
 
