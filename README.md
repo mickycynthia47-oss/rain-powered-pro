@@ -245,18 +245,18 @@ Dedicated page for responsible AI practices:
 ### Real-Time Metrics Tracked
 
 ```
-┌─────────────────────────────────────────────────────────┐
- 📊 LIVE ANALYTICS DASHBOARD                             │
-─────────────────────────────────────────────────────────│
- 📧 47 emails    📝 23 meetings    ✅ 56 tasks           │
- 🔬 34 research  💬 128 chats      ⭐ 84/100 score       │
- ⚡ 1.2s avg     📅 23m session    🔥 7 day streak       │
-─────────────────────────────────────────────────────────│
- [Donut Chart: Usage]  [Gauge: Productivity]            │
- [Bar Chart: Weekly]   [Line: Response Time]            │
-─────────────────────────────────────────────────────────│
- [📥 Export CSV]  [🔄 Reset Analytics]                   │
-─────────────────────────────────────────────────────────┘
+┌─────────────────────────────────────────────────────────
+ 📊 LIVE ANALYTICS DASHBOARD                             
+─────────────────────────────────────────────────────────
+ 📧 47 emails    📝 23 meetings    ✅ 56 tasks           
+ 🔬 34 research  💬 128 chats      ⭐ 84/100 score       
+ ⚡ 1.2s avg     📅 23m session    🔥 7 day streak       
+─────────────────────────────────────────────────────────
+ [Donut Chart: Usage]  [Gauge: Productivity]            
+ [Bar Chart: Weekly]   [Line: Response Time]            
+─────────────────────────────────────────────────────────
+ [📥 Export CSV]  [🔄 Reset Analytics]                   
+─────────────────────────────────────────────────────────
 ```
 
 ### Productivity Score Algorithm
@@ -392,7 +392,7 @@ npm run dev
 | **Created by** | Mongiwethu Eddy Ncube |
 | **Date** | May 2026 |
 | **Live URL** | [https://rain-powered-pro.lovable.app/auth](https://rain-powered-pro.lovable.app/auth) |
-| **GitHub** | [https://github.com/mongiwethu/AI-Productivity-Assistant](https://github.com/mickycynthia47-oss/rain-powered-pro) |
+| **GitHub** | [[https://github.com/mongiwethu/AI-Productivity-Assistant](https://github.com/mickycynthia47-oss/rain-powered-pro)](https://github.com/mickycynthia47-oss/rain-powered-pro) |
 
 ---
 
