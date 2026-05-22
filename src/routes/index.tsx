@@ -1230,3 +1230,95 @@ function SettingsSection({ cardBg, settings, setSettings }: {
     </div>
   );
 }
+
+/* ============================ AI SAFETY ============================ */
+
+function AiSafetySection({ cardBg, dark }: { cardBg: string; dark: boolean }) {
+  const accent = dark ? "#42A5F5" : "#1565C0";
+  const sections = [
+    {
+      title: "⚠️ Common AI Dangers",
+      icon: <Shield className="h-5 w-5" />,
+      items: [
+        { head: "Hallucinations & Misinformation", body: "AI can generate confident-sounding but completely false information. Always verify facts from trusted sources before acting on AI-generated content." },
+        { head: "Data Privacy Risks", body: "Anything you type into an AI tool may be stored, reviewed, or used to train future models. Never share passwords, personal identifiers, proprietary company data, or confidential client information." },
+        { head: "Bias & Fairness", body: "AI models reflect biases present in their training data. They may produce unfair, stereotyped, or discriminatory outputs. Review outputs for bias before using them in decisions that affect people." },
+        { head: "Over-Reliance", body: "Relying too heavily on AI can erode critical thinking, creativity, and subject-matter expertise. Use AI as a helper, not a replacement for your own judgment." },
+        { head: "Security Threats", body: "Attackers can use AI to generate convincing phishing emails, deepfake audio/video, or malware. Be extra vigilant with unexpected requests, even if they look authentic." },
+      ],
+    },
+    {
+      title: "✅ How to Use AI Responsibly",
+      icon: <CheckSquare className="h-5 w-5" />,
+      items: [
+        { head: "Verify Before Acting", body: "Treat every AI output as a draft. Cross-check facts, citations, and calculations with primary sources before using them in work products." },
+        { head: "Anonymize Sensitive Data", body: "Remove or mask names, addresses, account numbers, and proprietary details before feeding them into AI tools. When in doubt, don't paste it." },
+        { head: "Disclose AI Assistance", body: "Be transparent with colleagues, clients, and stakeholders when AI has contributed to your work. Honesty builds trust." },
+        { head: "Respect Copyright & IP", body: "AI-generated content may inadvertently reproduce copyrighted material. Ensure final outputs are original or properly licensed before publication or distribution." },
+        { head: "Follow Company Policy", body: "Adhere to your organization's AI usage policies. If your workplace restricts certain tools or data types, follow those rules carefully." },
+      ],
+    },
+    {
+      title: "🔒 Staying Safe Online",
+      icon: <Bell className="h-5 w-5" />,
+      items: [
+        { head: "Use Reputable Tools", body: "Stick to well-known, audited AI platforms. Be cautious of free or unknown tools that may harvest your data or deliver malicious code." },
+        { head: "Enable MFA Everywhere", body: "Protect your AI accounts (and all work accounts) with multi-factor authentication. It dramatically reduces the risk of unauthorized access." },
+        { head: "Beware of Deepfakes", body: "Audio and video deepfakes are increasingly convincing. For sensitive requests — especially involving money or access — verify through a second channel (call the person directly)." },
+        { head: "Keep Software Updated", body: "Regularly update browsers, operating systems, and security tools. Updates patch vulnerabilities that attackers can exploit." },
+        { head: "Report Incidents", body: "If you encounter harmful AI output, a data leak, or a suspected security issue, report it to your IT or security team immediately." },
+      ],
+    },
+    {
+      title: "📋 Best Practices Checklist",
+      icon: <ClipboardList className="h-5 w-5" />,
+      items: [
+        { head: "Before Submitting a Prompt", body: "Have I removed personal, confidential, or proprietary information? Am I using an approved tool? Is the use case appropriate?" },
+        { head: "After Receiving Output", body: "Did I fact-check key claims? Did I scan for biased language? Did I tailor the content rather than copy-paste blindly?" },
+        { head: "Before Sharing Externally", body: "Have I reviewed for accuracy, tone, and compliance? Did I disclose AI assistance where required? Is the data handling approved?" },
+        { head: "Ongoing Habits", body: "Stay informed about AI policy updates. Attend training sessions. Share learnings with your team. Encourage a culture of cautious, curious AI use." },
+      ],
+    },
+  ];
+
+  return (
+    <div className="space-y-6">
+      <div className="flex items-center justify-between">
+        <h2 className="text-2xl font-bold">🛡️ AI Safety & Responsible Use</h2>
+      </div>
+      <p className="text-sm opacity-80">
+        AI is a powerful productivity tool, but it comes with real risks. This guide helps you understand the dangers, use AI responsibly, and stay safe in an AI-powered workplace.
+      </p>
+
+      <div className="grid gap-6 md:grid-cols-2">
+        {sections.map((sec) => (
+          <Card key={sec.title} cardBg={cardBg}>
+            <div className="mb-4 flex items-center gap-2 font-bold" style={{ color: accent }}>
+              {sec.icon}
+              {sec.title}
+            </div>
+            <div className="space-y-4">
+              {sec.items.map((it) => (
+                <div key={it.head} className="rounded-xl border p-3" style={{ borderColor: "#1565C0" }}>
+                  <div className="mb-1 text-sm font-semibold" style={{ color: accent }}>{it.head}</div>
+                  <div className="text-sm opacity-90 leading-relaxed">{it.body}</div>
+                </div>
+              ))}
+            </div>
+          </Card>
+        ))}
+      </div>
+
+      <Card cardBg={cardBg}>
+        <div className="text-center">
+          <h3 className="mb-2 text-lg font-bold" style={{ color: accent }}>🛡️ Remember the Golden Rule</h3>
+          <p className="mx-auto max-w-2xl text-sm opacity-90 leading-relaxed">
+            AI amplifies human intent — both good and bad. The most important safety feature is <strong>you</strong>. Stay curious, stay skeptical, and always apply your own judgment. When in doubt, verify. When sensitive, abstain.
+          </p>
+        </div>
+      </Card>
+
+      <SectionDisclaimer />
+    </div>
+  );
+}
