@@ -32,7 +32,7 @@
 
 ---
 
-### 📧 Smart Email Generator
+### 📧 Achievements
 
 <img width="1680" height="899" alt="3" src="https://github.com/user-attachments/assets/20fa592c-1e1d-4b91-b885-79a8f4ec4735" />
 
