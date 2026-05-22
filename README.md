@@ -391,7 +391,7 @@ npm run dev
 | **Edition** | Blue Horizon — Rain-Powered Analytics |
 | **Created by** | Mongiwethu Eddy Ncube |
 | **Date** | May 2026 |
-| **Live URL** | https://rain-powered-pro.lovable.app/auth |
+| **Live URL** | [https://rain-powered-pro.lovable.app/auth](https://rain-powered-pro.lovable.app/auth) |
 | **GitHub** | https://github.com/mongiwethu/AI-Productivity-Assistant |
 
 ---
