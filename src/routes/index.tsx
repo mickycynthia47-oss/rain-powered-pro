@@ -58,7 +58,7 @@ function Page() {
 
 type Tab =
   | "dashboard" | "email" | "meetings" | "tasks" | "research"
-  | "chat" | "voice" | "achievements" | "settings" | "ai-safety";
+  | "chat" | "voice" | "achievements" | "settings" | "ai-safety" | "reviews";
 
 const NAV: { id: Tab; label: string; icon: ReactNode }[] = [
   { id: "dashboard", label: "🏠 Dashboard", icon: <LayoutDashboard className="h-5 w-5" /> },
@@ -69,6 +69,7 @@ const NAV: { id: Tab; label: string; icon: ReactNode }[] = [
   { id: "chat", label: "💬 Chatbot", icon: <MessageSquare className="h-5 w-5" /> },
   { id: "voice", label: "🎙️ Voice Commands", icon: <Mic className="h-5 w-5" /> },
   { id: "achievements", label: "🏆 Achievements", icon: <Trophy className="h-5 w-5" /> },
+  { id: "reviews", label: "⭐ Reviews & Share", icon: <Star className="h-5 w-5" /> },
   { id: "settings", label: "⚙️ Settings", icon: <SettingsIcon className="h-5 w-5" /> },
   { id: "ai-safety", label: "🛡️ AI Safety", icon: <Shield className="h-5 w-5" /> },
 ];
