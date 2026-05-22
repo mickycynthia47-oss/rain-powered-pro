@@ -19,19 +19,80 @@
 
 ## 📸 App Screenshots
 
-| Splash Screen | Dashboard | Email Generator |
-|---------------|-----------|-----------------|
-| ![Splash](https://via.placeholder.com/300x200/0D47A1/white?text=Rain+Splash) | ![Dashboard](https://via.placeholder.com/300x200/1565C0/white?text=Analytics) | ![Email](https://via.placeholder.com/300x200/42A5F5/white?text=Email+Tool) |
+<div align="center">
 
-| Meeting Summarizer | Task Planner | Chatbot |
-|--------------------|--------------|---------|
-| ![Meeting](https://via.placeholder.com/300x200/1976D2/white?text=Meeting) | ![Tasks](https://via.placeholder.com/300x200/1E88E5/white?text=Tasks) | ![Chat](https://via.placeholder.com/300x200/00ACC1/white?text=Chatbot) |
 
-| Voice Commands | Achievements | Settings |
-|----------------|--------------|----------|
-| ![Voice](https://via.placeholder.com/300x200/0D47A1/white?text=Voice) | ![Badges](https://via.placeholder.com/300x200/1565C0/white?text=Badges) | ![Settings](https://via.placeholder.com/300x200/42A5F5/white?text=Settings) |
+![Splash Screen](<img width="1678" height="913" alt="1" src="https://github.com/user-attachments/assets/2f620b90-3a1d-497b-bf6e-e23f81506415" />
+)
 
-> *Note: Replace placeholder images with actual screenshots from your app*
+---
+
+
+![Dashboard](<img width="1671" height="911" alt="2" src="https://github.com/user-attachments/assets/fdeb97b3-9b40-47a8-987c-df0c5c99f6dc" />
+)
+
+---
+
+### 📧 Smart Email Generator
+![Email Generator](<img width="1680" height="899" alt="3" src="https://github.com/user-attachments/assets/ab9cb113-ec90-4d23-8891-e2ac712c8f97" />
+)
+
+---
+
+### 📝 Meeting Summarizer
+![Meeting Summarizer](<img width="1680" height="914" alt="4" src="https://github.com/user-attachments/assets/46e893c6-0a09-441c-b60c-d07ecf84f74b" />
+)
+
+---
+
+### ✅ AI Task Planner
+![Task Planner](<img width="1680" height="909" alt="5" src="https://github.com/user-attachments/assets/58ae1dbd-8585-49ea-8e8c-df6ea0e6809c" />
+)
+
+---
+
+### 🔬 Research Assistant
+![Research Assistant](https://via.placeholder.com/800x400/00ACC1/white?text=Research+Assistant)
+
+---
+
+### 💬 AI Chatbot
+![Chatbot](https://via.placeholder.com/800x400/0D47A1/white?text=AI+Chatbot+Interface)
+
+---
+
+### 🎙️ Voice Commands
+![Voice Commands](https://via.placeholder.com/800x400/1565C0/white?text=Voice+Commands+Page)
+
+---
+
+### 🏆 Achievements & Badges
+![Achievements](https://via.placeholder.com/800x400/42A5F5/white?text=Gamification+Badges)
+
+---
+
+### ⭐ User Reviews Page
+![Reviews](https://via.placeholder.com/800x400/1976D2/white?text=User+Reviews+Page)
+
+---
+
+### 📤 Share Page
+![Share Page](https://via.placeholder.com/800x400/1E88E5/white?text=Share+Productivity+Stats)
+
+---
+
+### 🛡️ AI Safety Center
+![Safety Center](https://via.placeholder.com/800x400/00ACC1/white?text=AI+Safety+Center)
+
+---
+
+### ⚙️ Settings
+![Settings](https://via.placeholder.com/800x400/0D47A1/white?text=Settings+AI+Personality)
+
+</div>
+
+> *Note: Replace placeholder images with actual screenshots from your app. Add screenshots to `screenshots/` folder and update paths accordingly.*
+
 
 ---
 
