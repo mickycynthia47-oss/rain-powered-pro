@@ -80,10 +80,15 @@ export const Route = createRootRouteWithContext<{ queryClient: QueryClient }>()(
           "Blue Horizon Edition: rain-powered AI productivity suite for emails, meetings, tasks, research, and chat.",
       },
       { name: "author", content: "Blue Horizon" },
-      { property: "og:title", content: "AI Workplace Productivity Assistant" },
-      { property: "og:description", content: "Blue Horizon Edition — Rain-Powered Analytics" },
+      { property: "og:title", content: "AI Workplace Productivity Assistant — Blue Horizon Edition" },
+      { property: "og:description", content: "AI Workplace Productivity Assistant for enhanced efficiency and data-driven insights." },
       { property: "og:type", content: "website" },
       { name: "twitter:card", content: "summary" },
+      { name: "twitter:title", content: "AI Workplace Productivity Assistant — Blue Horizon Edition" },
+      { name: "description", content: "AI Workplace Productivity Assistant for enhanced efficiency and data-driven insights." },
+      { name: "twitter:description", content: "AI Workplace Productivity Assistant for enhanced efficiency and data-driven insights." },
+      { property: "og:image", content: "https://pub-bb2e103a32db4e198524a2e9ed8f35b4.r2.dev/4b64ae1c-dd31-474e-b01e-201480198dde/id-preview-5f47522e--295e02ac-a387-4d84-b73d-3008549042de.lovable.app-1779430316147.png" },
+      { name: "twitter:image", content: "https://pub-bb2e103a32db4e198524a2e9ed8f35b4.r2.dev/4b64ae1c-dd31-474e-b01e-201480198dde/id-preview-5f47522e--295e02ac-a387-4d84-b73d-3008549042de.lovable.app-1779430316147.png" },
     ],
     links: [
       {
