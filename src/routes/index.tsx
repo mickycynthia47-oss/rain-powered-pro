@@ -58,7 +58,7 @@ function Page() {
 
 type Tab =
   | "dashboard" | "email" | "meetings" | "tasks" | "research"
-  | "chat" | "voice" | "achievements" | "settings";
+  | "chat" | "voice" | "achievements" | "settings" | "ai-safety";
 
 const NAV: { id: Tab; label: string; icon: ReactNode }[] = [
   { id: "dashboard", label: "🏠 Dashboard", icon: <LayoutDashboard className="h-5 w-5" /> },
