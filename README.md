@@ -169,16 +169,16 @@ Users can share their productivity achievements:
 ### Sample Shared Card Preview
 
 ```
-┌─────────────────────────────────────────────────────────┐
-│ 🌧️ Blue Horizon AI Assistant                           │
-│ ─────────────────────────────────────────────────────── 
-│ 📧 47 emails  📝 23 meetings  ✅ 56 tasks               
-│ 🔬 34 research  💬 128 chats  ⭐ 84/100 score          
-│ 🔥 7 day streak  🏆 5 badges earned                     
-│ ─────────────────────────────────────────────────────── 
-│ Check out my productivity report:                       
-│ https://rain-powered-pro.lovable.app/share/eddy        
-└─────────────────────────────────────────────────────────
+─────────────────────────────────────────────────────────
+ 🌧️ Blue Horizon AI Assistant                           
+ ─────────────────────────────────────────────────────── 
+ 📧 47 emails  📝 23 meetings  ✅ 56 tasks               
+ 🔬 34 research  💬 128 chats  ⭐ 84/100 score          
+ 🔥 7 day streak  🏆 5 badges earned                     
+ ─────────────────────────────────────────────────────── 
+ Check out my productivity report:                       
+ https://rain-powered-pro.lovable.app/share/eddy        
+─────────────────────────────────────────────────────────
 ```
 
 ---
@@ -201,17 +201,17 @@ Dedicated page for responsible AI practices:
 ### Safety Dashboard
 
 ```
-┌─────────────────────────────────────────────────────────┐
- 🛡️ AI SAFETY CENTER                                    │
-─────────────────────────────────────────────────────────│
- ✅ Bias Score: 98% (minimal bias detected)              │
- ✅ Data Privacy: No external storage                    │
- ✅ User Control: 100% of outputs editable               │
- ⚠️ Limitations: 4 documented gaps                       │
- 📊 Feedback Accuracy: 87% positive 👍                   │
-─────────────────────────────────────────────────────────│
- [📥 Download Safety Report] [🔄 Run Safety Audit]       │
-─────────────────────────────────────────────────────────┘
+┌─────────────────────────────────────────────────────────
+ 🛡️ AI SAFETY CENTER                                    
+─────────────────────────────────────────────────────────
+ ✅ Bias Score: 98% (minimal bias detected)              
+ ✅ Data Privacy: No external storage                    
+ ✅ User Control: 100% of outputs editable               
+ ⚠️ Limitations: 4 documented gaps                       
+ 📊 Feedback Accuracy: 87% positive 👍                   
+─────────────────────────────────────────────────────────
+ [📥 Download Safety Report] [🔄 Run Safety Audit]       
+─────────────────────────────────────────────────────────
 ```
 
 ### Safety Report (CSV Export)
@@ -227,18 +227,18 @@ Dedicated page for responsible AI practices:
 ### Real-Time Metrics Tracked
 
 ```
-┌─────────────────────────────────────────────────────────┐
-│  📊 LIVE ANALYTICS DASHBOARD                            │
-├─────────────────────────────────────────────────────────│
-│  📧 47 emails    📝 23 meetings    ✅ 56 tasks          │
-│  🔬 34 research  💬 128 chats      ⭐ 84/100 score      │
-│  ⚡ 1.2s avg     📅 23m session    🔥 7 day streak      │
-├─────────────────────────────────────────────────────────│
-│  [Donut Chart: Usage]  [Gauge: Productivity]           │
-│  [Bar Chart: Weekly]   [Line: Response Time]           │
-├─────────────────────────────────────────────────────────│
-│  [📥 Export CSV]  [🔄 Reset Analytics]                  │
-└─────────────────────────────────────────────────────────┘
+┌─────────────────────────────────────────────────────────
+  📊 LIVE ANALYTICS DASHBOARD                            
+─────────────────────────────────────────────────────────
+  📧 47 emails    📝 23 meetings    ✅ 56 tasks          
+  🔬 34 research  💬 128 chats      ⭐ 84/100 score      
+  ⚡ 1.2s avg     📅 23m session    🔥 7 day streak      
+─────────────────────────────────────────────────────────
+  [Donut Chart: Usage]  [Gauge: Productivity]           
+  [Bar Chart: Weekly]   [Line: Response Time]          
+─────────────────────────────────────────────────────────
+  [📥 Export CSV]  [🔄 Reset Analytics]                  
+─────────────────────────────────────────────────────────
 ```
 
 ### Productivity Score Algorithm
@@ -402,11 +402,3 @@ Made with 💙 by **Mongiwethu Eddy Ncube**
 </div>
 
 ---
-
-**Key fixes applied:**
-- Removed `*(` and `)` wrappers around image tags
-- Added missing **Left Sidebar Navigation** table
-- Fixed spacing and alignment throughout
-- Proper Markdown formatting for all code blocks and tables
-
-Ready to copy and paste into your GitHub README! 🚀
