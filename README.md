@@ -20,49 +20,51 @@
 
 <div align="center">
 
- ### 🌧️ Splash Screen
+### 🌧️ Splash Screen
 
-<img width="1678" height="913" alt="1" src="<img width="601" height="705" alt="sign up" src="<img width="800" height="573" alt="splash" src="https://github.com/user-attachments/assets/d542ed8e-b757-4f9c-b072-4cde962fb4fa" />
-
----
-
-### 🌧️ Sign up
-
-<img width="1678" height="913" alt="1" src="<img width="601" height="705" alt="sign up" src="https://github.com/user-attachments/assets/272ff13c-40a3-4724-bab6-38638f16446d" />
-
----
-### 🌧️ Log in
-
-<img width="1678" height="913" alt="1" src="<<img width="556" height="679" alt="login" src="https://github.com/user-attachments/assets/4a8b9ac2-ae55-4db2-a44d-cb843cda4120" />
-
----
-### 🌧️ Analytics Dashboard
-
-<img width="1678" height="913" alt="1" src="https://github.com/user-attachments/assets/012281db-2f90-4048-bfbe-207dc48ef662" />
+<img width="800" height="573" alt="splash" src="https://github.com/user-attachments/assets/d542ed8e-b757-4f9c-b072-4cde962fb4fa" />
 
 ---
 
-### Reviews and Share
+### 🌧️ Sign Up
 
-<img width="1671" height="911" alt="2" src="https://github.com/user-attachments/assets/58afac93-0082-45cf-863a-c6421851e8e8" />
-
----
-
-### 📧 Achievements
-
-<img width="1680" height="899" alt="3" src="https://github.com/user-attachments/assets/20fa592c-1e1d-4b91-b885-79a8f4ec4735" />
+<img width="601" height="705" alt="sign up" src="https://github.com/user-attachments/assets/272ff13c-40a3-4724-bab6-38638f16446d" />
 
 ---
 
-### 📝 AI Safety
+### 🌧️ Log In
 
-<img width="1680" height="914" alt="4" src="https://github.com/user-attachments/assets/a2c4727c-e406-446c-8905-d7e8a4c7d545" />
+<img width="556" height="679" alt="login" src="https://github.com/user-attachments/assets/4a8b9ac2-ae55-4db2-a44d-cb843cda4120" />
+
+---
+
+### 📊 Analytics Dashboard
+
+<img width="1678" height="913" alt="analytics dashboard" src="https://github.com/user-attachments/assets/012281db-2f90-4048-bfbe-207dc48ef662" />
+
+---
+
+### ⭐ Reviews & Share
+
+<img width="1671" height="911" alt="reviews and share" src="https://github.com/user-attachments/assets/58afac93-0082-45cf-863a-c6421851e8e8" />
+
+---
+
+### 🏆 Achievements
+
+<img width="1680" height="899" alt="achievements" src="https://github.com/user-attachments/assets/20fa592c-1e1d-4b91-b885-79a8f4ec4735" />
+
+---
+
+### 🛡️ AI Safety
+
+<img width="1680" height="914" alt="ai safety" src="https://github.com/user-attachments/assets/a2c4727c-e406-446c-8905-d7e8a4c7d545" />
 
 ---
 
 ### ✅ AI Task Planner
 
-<img width="1680" height="909" alt="5" src="https://github.com/user-attachments/assets/18fb5d0d-d314-4f2b-969a-ffb56f046937" />
+<img width="1680" height="909" alt="task planner" src="https://github.com/user-attachments/assets/18fb5d0d-d314-4f2b-969a-ffb56f046937" />
 
 </div>
 
@@ -171,7 +173,7 @@ Users can leave feedback about the AI assistant:
 Users can share their productivity achievements:
 
 ### Share Options
-- 📊 **Share Stats Card** — Your productivity score, streak, badges earned
+- 📊 **Share Stats Card** — Productivity score, streak, badges earned
 - 🎯 **Share Weekly Report** — Graph of your weekly activity
 - 🏆 **Share Achievement** — "I just unlocked Email Master badge!"
 - 📧 **Share with Team** — Generate team invite link
@@ -217,17 +219,17 @@ Dedicated page for responsible AI practices:
 ### Safety Dashboard
 
 ```
-┌─────────────────────────────────────────────────────────
- 🛡️ AI SAFETY CENTER                                    
-─────────────────────────────────────────────────────────
- ✅ Bias Score: 98% (minimal bias detected)              
- ✅ Data Privacy: No external storage                    
- ✅ User Control: 100% of outputs editable               
- ⚠️ Limitations: 4 documented gaps                       
- 📊 Feedback Accuracy: 87% positive 👍                   
-─────────────────────────────────────────────────────────
- [📥 Download Safety Report] [🔄 Run Safety Audit]       
-─────────────────────────────────────────────────────────
+┌─────────────────────────────────────────────────────────┐
+ 🛡️ AI SAFETY CENTER                                    │
+─────────────────────────────────────────────────────────│
+ ✅ Bias Score: 98% (minimal bias detected)              │
+ ✅ Data Privacy: No external storage                    │
+ ✅ User Control: 100% of outputs editable               │
+ ⚠️ Limitations: 4 documented gaps                       │
+ 📊 Feedback Accuracy: 87% positive 👍                   │
+─────────────────────────────────────────────────────────│
+ [📥 Download Safety Report] [🔄 Run Safety Audit]       │
+─────────────────────────────────────────────────────────┘
 ```
 
 ### Safety Report (CSV Export)
@@ -243,18 +245,18 @@ Dedicated page for responsible AI practices:
 ### Real-Time Metrics Tracked
 
 ```
-┌─────────────────────────────────────────────────────────
-  📊 LIVE ANALYTICS DASHBOARD                            
-─────────────────────────────────────────────────────────
-  📧 47 emails    📝 23 meetings    ✅ 56 tasks          
-  🔬 34 research  💬 128 chats      ⭐ 84/100 score      
-  ⚡ 1.2s avg     📅 23m session    🔥 7 day streak      
-─────────────────────────────────────────────────────────
-  [Donut Chart: Usage]  [Gauge: Productivity]           
-  [Bar Chart: Weekly]   [Line: Response Time]          
-─────────────────────────────────────────────────────────
-  [📥 Export CSV]  [🔄 Reset Analytics]                  
-─────────────────────────────────────────────────────────
+┌─────────────────────────────────────────────────────────┐
+ 📊 LIVE ANALYTICS DASHBOARD                             │
+─────────────────────────────────────────────────────────│
+ 📧 47 emails    📝 23 meetings    ✅ 56 tasks           │
+ 🔬 34 research  💬 128 chats      ⭐ 84/100 score       │
+ ⚡ 1.2s avg     📅 23m session    🔥 7 day streak       │
+─────────────────────────────────────────────────────────│
+ [Donut Chart: Usage]  [Gauge: Productivity]            │
+ [Bar Chart: Weekly]   [Line: Response Time]            │
+─────────────────────────────────────────────────────────│
+ [📥 Export CSV]  [🔄 Reset Analytics]                   │
+─────────────────────────────────────────────────────────┘
 ```
 
 ### Productivity Score Algorithm
