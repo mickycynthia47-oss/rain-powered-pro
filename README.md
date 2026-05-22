@@ -1,4 +1,3 @@
-
 <div align="center">
 
 # 🌧️📊 AI Workplace Productivity Assistant
@@ -6,7 +5,7 @@
 ### *Blue Horizon Edition — Rain-Powered Analytics*
 
 [![Live Demo](https://img.shields.io/badge/Live-Demo-1E88E5?style=for-the-badge&logo=lovable)](https://rain-powered-pro.lovable.app/auth)
-[![Made with Lovable.ai](https://img.shields.io/badge/Made%20with-Lovable.ai-8A2BE2?style=-for-the-badge)](https://lovable.ai)
+[![Made with Lovable.ai](https://img.shields.io/badge/Made%20with-Lovable.ai-8A2BE2?style=for-the-badge)](https://lovable.ai)
 [![AI Safety](https://img.shields.io/badge/AI-Safety%20Certified-00ACC1?style=for-the-badge)](https://github.com)
 [![GitHub](https://img.shields.io/badge/GitHub-Repo-181717?style=for-the-badge&logo=github)](https://github.com/mongiwethu/AI-Productivity-Assistant)
 
@@ -22,28 +21,34 @@
 <div align="center">
 
 ### 🌧️ Splash Screen
-*(<img width="1678" height="913" alt="1" src="https://github.com/user-attachments/assets/012281db-2f90-4048-bfbe-207dc48ef662" />)*
+
+<img width="1678" height="913" alt="1" src="https://github.com/user-attachments/assets/012281db-2f90-4048-bfbe-207dc48ef662" />
 
 ---
 
 ### 📊 Analytics Dashboard
-*(<img width="1671" height="911" alt="2" src="https://github.com/user-attachments/assets/58afac93-0082-45cf-863a-c6421851e8e8" />)*
+
+<img width="1671" height="911" alt="2" src="https://github.com/user-attachments/assets/58afac93-0082-45cf-863a-c6421851e8e8" />
 
 ---
 
 ### 📧 Smart Email Generator
-*(<img width="1680" height="899" alt="3" src="https://github.com/user-attachments/assets/20fa592c-1e1d-4b91-b885-79a8f4ec4735" />)*
+
+<img width="1680" height="899" alt="3" src="https://github.com/user-attachments/assets/20fa592c-1e1d-4b91-b885-79a8f4ec4735" />
 
 ---
 
 ### 📝 Meeting Summarizer
-*(<img width="1680" height="914" alt="4" src="https://github.com/user-attachments/assets/a2c4727c-e406-446c-8905-d7e8a4c7d545" />)*
+
+<img width="1680" height="914" alt="4" src="https://github.com/user-attachments/assets/a2c4727c-e406-446c-8905-d7e8a4c7d545" />
 
 ---
 
 ### ✅ AI Task Planner
-*(<img width="1680" height="909" alt="5" src="https://github.com/user-attachments/assets/18fb5d0d-d314-4f2b-969a-ffb56f046937" />
-)*
+
+<img width="1680" height="909" alt="5" src="https://github.com/user-attachments/assets/18fb5d0d-d314-4f2b-969a-ffb56f046937" />
+
+</div>
 
 ---
 
@@ -63,6 +68,22 @@ Once you click OK, the splash screen saves to `localStorage` and never appears a
 
 ## 🧭 Left Sidebar Navigation
 
+| Icon | Page | Description |
+|------|------|-------------|
+| 📧 | Email Generator | AI-powered professional emails |
+| 📝 | Meeting Summarizer | Extract decisions & action items |
+| ✅ | Task Planner | Eisenhower Matrix priority planning |
+| 🔬 | Research Assistant | Summarize articles & extract insights |
+| 💬 | AI Chatbot | Context-aware workplace assistant |
+| 📊 | Analytics Dashboard | Real-time productivity charts |
+| 🏆 | Gamification | Badges, streaks & achievements |
+| 🔊 | Ambient Sounds | Rain/Ocean/Coffee Shop audio |
+| ⭐ | Reviews & Ratings | User feedback & star ratings |
+| 📤 | Share Page | Share productivity stats |
+| 🛡️ | Safety Center | AI ethics & bias monitoring |
+| 🎨 | AI Personality | Customize tone + verbosity + emojis |
+| ⚙️ | Settings | App preferences |
+| ❓ | Help | Tutorial & support |
 
 ---
 
@@ -112,6 +133,7 @@ Users can leave feedback about the AI assistant:
 - Sort by: Newest | Highest Rated | Most Helpful
 
 ### Sample Review Card
+
 ```
 ─────────────────────────────────────────────────────────
  ⭐⭐⭐⭐⭐ 5.0                                               
@@ -145,6 +167,7 @@ Users can share their productivity achievements:
 - 💬 Copy as Markdown (for GitHub/README)
 
 ### Sample Shared Card Preview
+
 ```
 ┌─────────────────────────────────────────────────────────┐
 │ 🌧️ Blue Horizon AI Assistant                           │
@@ -176,18 +199,19 @@ Dedicated page for responsible AI practices:
 | **📝 Limitations Acknowledged** | Lists what AI cannot do (real-time data, calendar access) |
 
 ### Safety Dashboard
+
 ```
-┌─────────────────────────────────────────────────────────
- 🛡️ AI SAFETY CENTER                                   
-─────────────────────────────────────────────────────────
- ✅ Bias Score: 98% (minimal bias detected)              
- ✅ Data Privacy: No external storage                    
- ✅ User Control: 100% of outputs editable               
- ⚠️ Limitations: 4 documented gaps                       
- 📊 Feedback Accuracy: 87% positive 👍                   
-─────────────────────────────────────────────────────────
- [📥 Download Safety Report] [🔄 Run Safety Audit]      
-─────────────────────────────────────────────────────────
+┌─────────────────────────────────────────────────────────┐
+ 🛡️ AI SAFETY CENTER                                    │
+─────────────────────────────────────────────────────────│
+ ✅ Bias Score: 98% (minimal bias detected)              │
+ ✅ Data Privacy: No external storage                    │
+ ✅ User Control: 100% of outputs editable               │
+ ⚠️ Limitations: 4 documented gaps                       │
+ 📊 Feedback Accuracy: 87% positive 👍                   │
+─────────────────────────────────────────────────────────│
+ [📥 Download Safety Report] [🔄 Run Safety Audit]       │
+─────────────────────────────────────────────────────────┘
 ```
 
 ### Safety Report (CSV Export)
@@ -203,18 +227,18 @@ Dedicated page for responsible AI practices:
 ### Real-Time Metrics Tracked
 
 ```
-┌─────────────────────────────────────────────────────────
-│  📊 LIVE ANALYTICS DASHBOARD                            
-├─────────────────────────────────────────────────────────
-│  📧 47 emails    📝 23 meetings    ✅ 56 tasks          
-│  🔬 34 research  💬 128 chats      ⭐ 84/100 score      
-│  ⚡ 1.2s avg     📅 23m session    🔥 7 day streak      
-├─────────────────────────────────────────────────────────
-│  [Donut Chart: Usage]  [Gauge: Productivity]           
-│  [Bar Chart: Weekly]   [Line: Response Time]           
-├─────────────────────────────────────────────────────────
-│  [📥 Export CSV]  [🔄 Reset Analytics]                  
-└─────────────────────────────────────────────────────────
+┌─────────────────────────────────────────────────────────┐
+│  📊 LIVE ANALYTICS DASHBOARD                            │
+├─────────────────────────────────────────────────────────│
+│  📧 47 emails    📝 23 meetings    ✅ 56 tasks          │
+│  🔬 34 research  💬 128 chats      ⭐ 84/100 score      │
+│  ⚡ 1.2s avg     📅 23m session    🔥 7 day streak      │
+├─────────────────────────────────────────────────────────│
+│  [Donut Chart: Usage]  [Gauge: Productivity]           │
+│  [Bar Chart: Weekly]   [Line: Response Time]           │
+├─────────────────────────────────────────────────────────│
+│  [📥 Export CSV]  [🔄 Reset Analytics]                  │
+└─────────────────────────────────────────────────────────┘
 ```
 
 ### Productivity Score Algorithm
@@ -265,7 +289,7 @@ Extract from meeting notes:
 Format as markdown. If info missing, say "Not specified."
 ```
 
-[Additional prompts for Task Planner, Research Assistant, Chatbot available in the app's Settings → Prompt Library]
+*Additional prompts for Task Planner, Research Assistant, Chatbot available in the app's Settings → Prompt Library*
 
 ---
 
@@ -376,7 +400,13 @@ Made with 💙 by **Mongiwethu Eddy Ncube**
 [Live Demo](https://rain-powered-pro.lovable.app/auth) · [GitHub](https://github.com/mongiwethu/AI-Productivity-Assistant) · [Report Issue](https://github.com/mongiwethu/AI-Productivity-Assistant/issues)
 
 </div>
-```
 
 ---
 
+**Key fixes applied:**
+- Removed `*(` and `)` wrappers around image tags
+- Added missing **Left Sidebar Navigation** table
+- Fixed spacing and alignment throughout
+- Proper Markdown formatting for all code blocks and tables
+
+Ready to copy and paste into your GitHub README! 🚀
