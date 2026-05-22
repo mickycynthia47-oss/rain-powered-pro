@@ -392,7 +392,7 @@ npm run dev
 | **Created by** | Mongiwethu Eddy Ncube |
 | **Date** | May 2026 |
 | **Live URL** | [https://rain-powered-pro.lovable.app/auth](https://rain-powered-pro.lovable.app/auth) |
-| **GitHub** | https://github.com/mongiwethu/AI-Productivity-Assistant |
+| **GitHub** | [https://github.com/mongiwethu/AI-Productivity-Assistant](https://github.com/mickycynthia47-oss/rain-powered-pro) |
 
 ---
 
