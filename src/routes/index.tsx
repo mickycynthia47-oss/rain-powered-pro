@@ -255,6 +255,7 @@ function App({ user }: { user: UserShape }) {
           {tab === "achievements" && <AchievementsSection cardBg={cardBg} />}
           {tab === "settings" && <SettingsSection cardBg={cardBg} settings={settings} setSettings={setSettings} />}
           {tab === "ai-safety" && <AiSafetySection cardBg={cardBg} dark={dark} />}
+          {tab === "reviews" && <ReviewsSection cardBg={cardBg} />}
         </div>
 
         <footer className="mx-auto mt-10 max-w-7xl border-t pt-6 text-center text-xs opacity-70" style={{ borderColor: dark ? "#1B263B" : "#BBDEFB" }}>
