@@ -1324,3 +1324,259 @@ function AiSafetySection({ cardBg, dark }: { cardBg: string; dark: boolean }) {
     </div>
   );
 }
+
+/* ============================ REVIEWS & SHARE ============================ */
+
+type Review = {
+  id: string;
+  name: string;
+  rating: number;
+  text: string;
+  createdAt: number;
+};
+
+const REVIEWS_KEY = "bh-reviews";
+const SEED_REVIEWS: Review[] = [
+  { id: "s1", name: "Sarah K.", rating: 5, text: "This assistant saved me hours every week. The email generator is a game changer!", createdAt: Date.now() - 86400000 * 4 },
+  { id: "s2", name: "Marcus T.", rating: 5, text: "Beautiful UI and the rain sounds keep me focused. Love the dark blue theme.", createdAt: Date.now() - 86400000 * 2 },
+  { id: "s3", name: "Priya R.", rating: 4, text: "Meeting summaries are spot on. Would love more language support soon.", createdAt: Date.now() - 86400000 },
+];
+
+function loadReviews(): Review[] {
+  if (typeof window === "undefined") return SEED_REVIEWS;
+  try {
+    const raw = localStorage.getItem(REVIEWS_KEY);
+    if (!raw) return SEED_REVIEWS;
+    return JSON.parse(raw) as Review[];
+  } catch {
+    return SEED_REVIEWS;
+  }
+}
+
+function ReviewsSection({ cardBg }: { cardBg: string }) {
+  const [reviews, setReviews] = useState<Review[]>([]);
+  const [name, setName] = useState("");
+  const [text, setText] = useState("");
+  const [rating, setRating] = useState(5);
+
+  useEffect(() => { setReviews(loadReviews()); }, []);
+
+  const shareUrl = typeof window !== "undefined" ? window.location.origin : "https://example.com";
+  const shareText = "🌧️ Check out AI Workplace Productivity Assistant — Blue Horizon Edition! Boost your workflow with AI ✨";
+
+  const submit = () => {
+    if (!name.trim() || !text.trim()) {
+      toast.error("Please add your name and review");
+      return;
+    }
+    const r: Review = {
+      id: crypto.randomUUID(),
+      name: name.trim(),
+      rating,
+      text: text.trim(),
+      createdAt: Date.now(),
+    };
+    const next = [r, ...reviews];
+    setReviews(next);
+    localStorage.setItem(REVIEWS_KEY, JSON.stringify(next));
+    setName(""); setText(""); setRating(5);
+    toast.success("Thanks for your review! ⭐");
+    confetti({ particleCount: 60, spread: 70, origin: { y: 0.7 } });
+  };
+
+  const avg = reviews.length
+    ? (reviews.reduce((a, r) => a + r.rating, 0) / reviews.length).toFixed(1)
+    : "0.0";
+
+  const encodedUrl = encodeURIComponent(shareUrl);
+  const encodedText = encodeURIComponent(shareText);
+
+  const shareLinks = [
+    { name: "Facebook", color: "#1877F2", emoji: "📘",
+      href: `https://www.facebook.com/sharer/sharer.php?u=${encodedUrl}&quote=${encodedText}` },
+    { name: "WhatsApp", color: "#25D366", emoji: "💬",
+      href: `https://wa.me/?text=${encodedText}%20${encodedUrl}` },
+    { name: "X / Twitter", color: "#000000", emoji: "𝕏",
+      href: `https://twitter.com/intent/tweet?text=${encodedText}&url=${encodedUrl}` },
+    { name: "LinkedIn", color: "#0A66C2", emoji: "💼",
+      href: `https://www.linkedin.com/sharing/share-offsite/?url=${encodedUrl}` },
+    { name: "Telegram", color: "#26A5E4", emoji: "✈️",
+      href: `https://t.me/share/url?url=${encodedUrl}&text=${encodedText}` },
+    { name: "Reddit", color: "#FF4500", emoji: "🤖",
+      href: `https://www.reddit.com/submit?url=${encodedUrl}&title=${encodedText}` },
+    { name: "Email", color: "#6B7280", emoji: "📧",
+      href: `mailto:?subject=${encodeURIComponent("Try this AI app")}&body=${encodedText}%20${encodedUrl}` },
+  ];
+
+  const copyLink = async () => {
+    try {
+      await navigator.clipboard.writeText(shareUrl);
+      toast.success("Link copied to clipboard");
+    } catch {
+      toast.error("Could not copy link");
+    }
+  };
+
+  const nativeShare = async () => {
+    if (typeof navigator !== "undefined" && (navigator as Navigator & { share?: (data: ShareData) => Promise<void> }).share) {
+      try {
+        await (navigator as Navigator & { share: (data: ShareData) => Promise<void> }).share({
+          title: "AI Workplace Productivity Assistant",
+          text: shareText,
+          url: shareUrl,
+        });
+      } catch { /* user cancelled */ }
+    } else {
+      copyLink();
+    }
+  };
+
+  const instagramShare = () => {
+    copyLink();
+    toast.info("Instagram doesn't support web link sharing — link copied! Paste it in your story or bio.");
+  };
+
+  return (
+    <div className="space-y-6">
+      <header>
+        <h2 className="text-2xl font-bold mb-1">⭐ Reviews & Share</h2>
+        <p className="opacity-70 text-sm">See what people say and spread the word.</p>
+      </header>
+
+      {/* Summary */}
+      <Card cardBg={cardBg}>
+        <div className="p-6 flex flex-wrap items-center gap-6">
+          <div className="text-center">
+            <div className="text-5xl font-bold" style={{ color: "#42A5F5" }}>{avg}</div>
+            <div className="flex justify-center mt-1">
+              {[1,2,3,4,5].map(i => (
+                <Star key={i} className="h-5 w-5"
+                  fill={i <= Math.round(Number(avg)) ? "#FBBF24" : "none"}
+                  color="#FBBF24" />
+              ))}
+            </div>
+            <div className="text-xs opacity-70 mt-1">{reviews.length} review{reviews.length === 1 ? "" : "s"}</div>
+          </div>
+          <div className="flex-1 min-w-[200px]">
+            <h3 className="font-semibold mb-1">Love the app?</h3>
+            <p className="text-sm opacity-70">Leave a review below and share it with your team using the buttons.</p>
+          </div>
+        </div>
+      </Card>
+
+      {/* Share */}
+      <Card cardBg={cardBg}>
+        <div className="p-6 space-y-4">
+          <div className="flex items-center gap-2">
+            <Share2 className="h-5 w-5" style={{ color: "#42A5F5" }} />
+            <h3 className="font-semibold text-lg">Share with friends & colleagues</h3>
+          </div>
+
+          <div className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 gap-3">
+            {shareLinks.map(s => (
+              <a key={s.name} href={s.href} target="_blank" rel="noopener noreferrer"
+                className="flex items-center gap-2 px-4 py-3 rounded-lg font-medium text-white transition-transform hover:scale-105"
+                style={{ backgroundColor: s.color }}>
+                <span className="text-lg">{s.emoji}</span>
+                <span className="text-sm">{s.name}</span>
+              </a>
+            ))}
+            <button onClick={instagramShare}
+              className="flex items-center gap-2 px-4 py-3 rounded-lg font-medium text-white transition-transform hover:scale-105"
+              style={{ background: "linear-gradient(135deg,#F58529,#DD2A7B,#8134AF,#515BD4)" }}>
+              <span className="text-lg">📸</span>
+              <span className="text-sm">Instagram</span>
+            </button>
+          </div>
+
+          <div className="flex flex-wrap gap-2 pt-2">
+            <button onClick={copyLink}
+              className="flex items-center gap-2 px-4 py-2 rounded-lg border text-sm hover:opacity-80"
+              style={{ borderColor: "#1565C0" }}>
+              <LinkIcon className="h-4 w-4" /> Copy link
+            </button>
+            <button onClick={nativeShare}
+              className="flex items-center gap-2 px-4 py-2 rounded-lg text-sm text-white hover:opacity-90"
+              style={{ backgroundColor: "#1565C0" }}>
+              <Share2 className="h-4 w-4" /> More options
+            </button>
+          </div>
+
+          <div className="text-xs opacity-60 break-all pt-2 border-t" style={{ borderColor: "#1565C0" }}>
+            🔗 {shareUrl}
+          </div>
+        </div>
+      </Card>
+
+      {/* Leave a review */}
+      <Card cardBg={cardBg}>
+        <div className="p-6 space-y-3">
+          <h3 className="font-semibold text-lg">Leave a review</h3>
+          <input
+            value={name}
+            onChange={(e) => setName(e.target.value)}
+            placeholder="Your name"
+            className="w-full px-3 py-2 rounded-lg bg-transparent border outline-none"
+            style={{ borderColor: "#1565C0" }}
+          />
+          <div className="flex items-center gap-1">
+            {[1,2,3,4,5].map(i => (
+              <button key={i} onClick={() => setRating(i)} className="p-1">
+                <Star className="h-6 w-6"
+                  fill={i <= rating ? "#FBBF24" : "none"} color="#FBBF24" />
+              </button>
+            ))}
+            <span className="ml-2 text-sm opacity-70">{rating} / 5</span>
+          </div>
+          <textarea
+            value={text}
+            onChange={(e) => setText(e.target.value)}
+            placeholder="Tell us what you love..."
+            rows={4}
+            className="w-full px-3 py-2 rounded-lg bg-transparent border outline-none"
+            style={{ borderColor: "#1565C0" }}
+          />
+          <button onClick={submit}
+            className="flex items-center gap-2 px-4 py-2 rounded-lg text-white hover:opacity-90"
+            style={{ backgroundColor: "#1565C0" }}>
+            <Send className="h-4 w-4" /> Submit review
+          </button>
+        </div>
+      </Card>
+
+      {/* Reviews list */}
+      <div className="space-y-3">
+        <h3 className="font-semibold text-lg">What people say</h3>
+        {reviews.map(r => (
+          <Card key={r.id} cardBg={cardBg}>
+            <div className="p-5 space-y-2">
+              <div className="flex items-center justify-between flex-wrap gap-2">
+                <div className="flex items-center gap-2">
+                  <div className="h-9 w-9 rounded-full flex items-center justify-center text-white font-bold"
+                    style={{ backgroundColor: "#1565C0" }}>
+                    {r.name.charAt(0).toUpperCase()}
+                  </div>
+                  <div>
+                    <div className="font-semibold text-sm">{r.name}</div>
+                    <div className="text-xs opacity-60">
+                      {new Date(r.createdAt).toLocaleDateString()}
+                    </div>
+                  </div>
+                </div>
+                <div className="flex">
+                  {[1,2,3,4,5].map(i => (
+                    <Star key={i} className="h-4 w-4"
+                      fill={i <= r.rating ? "#FBBF24" : "none"} color="#FBBF24" />
+                  ))}
+                </div>
+              </div>
+              <p className="text-sm opacity-90">{r.text}</p>
+            </div>
+          </Card>
+        ))}
+      </div>
+
+      <SectionDisclaimer />
+    </div>
+  );
+}
