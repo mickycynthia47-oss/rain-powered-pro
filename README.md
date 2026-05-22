@@ -51,6 +51,32 @@ Once you click OK, the splash screen saves to `localStorage` and never appears a
 
 ## 🧭 Left Sidebar Navigation
 
+```
+┌─────────────────────────────────────────────────────────────┐
+│ ┌──────────┐                                               │
+│ │ 🌧️ AI    │                                               │
+│ │ Assistant│                                               │
+│ ├──────────┤                                               │
+│ │ 👤 Eddy  │                                               │
+│ ├──────────┤                                               │
+│ │ 🏠 Dash  │  ┌─────────────────────────────────────────┐ │
+│ │ 📧 Email │  │                                         │ │
+│ │ 📝 Meet  │  │    📊 ANALYTICS DASHBOARD              │ │
+│ │ ✅ Tasks │  │    📧 Email Generator                   │ │
+│ │ 🔬 Res   │  │    📝 Meeting Summarizer                │ │
+│ │ 💬 Chat  │  │    ✅ Task Planner                      │ │
+│ │ 🎙️ Voice │  │    🔬 Research Assistant                │ │
+│ │ 🏆 Badges│  │    💬 AI Chatbot                        │ │
+│ │ ⭐ Reviews│ │    🎙️ Voice Commands                    │ │
+│ │ 📤 Share │  │    🏆 Achievements                      │ │
+│ │ 🛡️ Safety│  │    ⭐ User Reviews                      │ │
+│ │ ⚙️ Settings│ │    📤 Share Assistant                  │ │
+│ ├──────────┤  │    🛡️ AI Safety Center                  │ │
+│ │ 🌙 Dark  │  │    ⚙️ Settings                          │ │
+│ │ 🔊 Sound │  │                                         │ │
+│ └──────────┘  └─────────────────────────────────────────┘ │
+└─────────────────────────────────────────────────────────────┘
+```
 
 ---
 
@@ -101,12 +127,12 @@ Users can leave feedback about the AI assistant:
 
 ### Sample Review Card
 ```
-─────────────────────────────────────────────────────────
- ⭐⭐⭐⭐⭐ 5.0                                        
- "This AI saved my workweek!"                            
- — Mongiwethu E. · 2 days ago                            
- Category: Overall · Helpful: 24 people                  
-─────────────────────────────────────────────────────────
+┌─────────────────────────────────────────────────────────┐
+│ ⭐⭐⭐⭐⭐ 5.0                                               │
+│ "This AI saved my workweek!"                            │
+│ — Mongiwethu E. · 2 days ago                            │
+│ Category: Overall · Helpful: 24 people                  │
+└─────────────────────────────────────────────────────────┘
 ```
 
 ### Admin Features (LocalStorage-based)
@@ -135,12 +161,12 @@ Users can share their productivity achievements:
 ### Sample Shared Card Preview
 ```
 ─────────────────────────────────────────────────────────
- 🌧️ Blue Horizon AI Assistant                          
+ 🌧️ Blue Horizon AI Assistant                           
  ─────────────────────────────────────────────────────── 
  📧 47 emails  📝 23 meetings  ✅ 56 tasks               
- 🔬 34 research  💬 128 chats  ⭐ 84/100 score         
- 🔥 7 day streak  🏆 5 badges earned                    
- ─────────────────────────────────────────────────────── 
+ 🔬 34 research  💬 128 chats  ⭐ 84/100 score          
+ 🔥 7 day streak  🏆 5 badges earned                     
+  ─────────────────────────────────────────────────────── 
  Check out my productivity report:                       
  https://rain-powered-pro.lovable.app/share/eddy        
 ─────────────────────────────────────────────────────────
@@ -165,17 +191,17 @@ Dedicated page for responsible AI practices:
 
 ### Safety Dashboard
 ```
-─────────────────────────────────────────────────────────
- 🛡️ AI SAFETY CENTER                                    
-─────────────────────────────────────────────────────────
- ✅ Bias Score: 98% (minimal bias detected)              
- ✅ Data Privacy: No external storage                    
- ✅ User Control: 100% of outputs editable               
- ⚠️ Limitations: 4 documented gaps                       
- 📊 Feedback Accuracy: 87% positive 👍                   
-─────────────────────────────────────────────────────────
- [📥 Download Safety Report] [🔄 Run Safety Audit]      
-─────────────────────────────────────────────────────────
+┌─────────────────────────────────────────────────────────
+│ 🛡️ AI SAFETY CENTER                                    
+├─────────────────────────────────────────────────────────
+│ ✅ Bias Score: 98% (minimal bias detected)              
+│ ✅ Data Privacy: No external storage                    
+│ ✅ User Control: 100% of outputs editable               
+│ ⚠️ Limitations: 4 documented gaps                       
+│ 📊 Feedback Accuracy: 87% positive 👍                   
+├─────────────────────────────────────────────────────────
+│ [📥 Download Safety Report] [🔄 Run Safety Audit]      
+└─────────────────────────────────────────────────────────
 ```
 
 ### Safety Report (CSV Export)
@@ -217,18 +243,18 @@ Add this section to showcase your app visually:
 ### Real-Time Metrics Tracked
 
 ```
-┌─────────────────────────────────────────────────────────
-│  📊 LIVE ANALYTICS DASHBOARD                            
-├─────────────────────────────────────────────────────────
-│  📧 47 emails    📝 23 meetings    ✅ 56 tasks          
-│  🔬 34 research  💬 128 chats      ⭐ 84/100 score      
-│  ⚡ 1.2s avg     📅 23m session    🔥 7 day streak      
-├─────────────────────────────────────────────────────────
-│  [Donut Chart: Usage]  [Gauge: Productivity]           
-│  [Bar Chart: Weekly]   [Line: Response Time]           
-├─────────────────────────────────────────────────────────
-│  [📥 Export CSV]  [🔄 Reset Analytics]                  
-└─────────────────────────────────────────────────────────
+ ─────────────────────────────────────────────────────────
+  📊 LIVE ANALYTICS DASHBOARD                            
+ ─────────────────────────────────────────────────────────
+  📧 47 emails    📝 23 meetings    ✅ 56 tasks          
+  🔬 34 research  💬 128 chats      ⭐ 84/100 score      
+  ⚡ 1.2s avg     📅 23m session    🔥 7 day streak      
+ ─────────────────────────────────────────────────────────
+  [Donut Chart: Usage]  [Gauge: Productivity]           
+  [Bar Chart: Weekly]   [Line: Response Time]           
+ ─────────────────────────────────────────────────────────
+  [📥 Export CSV]  [🔄 Reset Analytics]                  
+ ─────────────────────────────────────────────────────────
 ```
 
 ### Productivity Score Algorithm
@@ -331,7 +357,7 @@ npm run dev
 | Responsible AI | 10% | Dedicated Safety Center + bias monitoring + disclaimers |
 | Presentation | 5% | Professional README + image gallery + live demo |
 
-**Total Expected Score:** 100/100 🎯
+
 
 ---
 
@@ -385,44 +411,5 @@ npm run dev
 
 Made with 💙 by **Mongiwethu Eddy Ncube**
 
-⭐ Star this repo if you find it useful! ⭐
 
-[Live Demo](https://rain-powered-pro.lovable.app/auth) · [GitHub](https://github.com/mongiwethu/AI-Productivity-Assistant) · [Report Issue](https://github.com/mongiwethu/AI-Productivity-Assistant/issues)
 
-</div>
-```
-
----
-
-## 📸 How to Add Actual Screenshots
-
-Replace the placeholder images with actual screenshots:
-
-1. **Take screenshots** of your app pages
-2. **Save them** in your GitHub repo under `screenshots/` folder
-3. **Replace** the placeholder URLs:
-
-```markdown
-<!-- Before -->
-![Splash](https://via.placeholder.com/300x200/0D47A1/white?text=Rain+Splash)
-
-<!-- After -->
-![Splash](./screenshots/splash-screen.png)
-```
-
----
-
-## 🎯 Quick Summary for Evaluators
-
-| Requirement | Status | Location |
-|-------------|--------|----------|
-| Reviews page | ✅ Added | `⭐ Reviews` menu item |
-| Share page | ✅ Added | `📤 Share` menu item |
-| AI Safety section | ✅ Added | `🛡️ Safety` menu item |
-| Images/screenshots | ✅ Placeholder | Gallery section above |
-| Left sidebar | ✅ Working | Your live app |
-| My name | ✅ Displayed | Top of README + footer |
-
----
-
-Your README is now **complete, professional, and submission-ready**! Just add actual screenshots to the gallery section. 🚀🌧️💙
