@@ -20,7 +20,7 @@
 
 <div align="center">
 
-### 🌧️ Splash Screen
+### 🌧️ Analytics Dashboard
 
 <img width="1678" height="913" alt="1" src="https://github.com/user-attachments/assets/012281db-2f90-4048-bfbe-207dc48ef662" />
 
